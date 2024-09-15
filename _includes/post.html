@@ -74,10 +74,10 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">Share Post</h4>
-        <a class="btn btn-default btn-sm gplus"
-           onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+window.location.href+"&title={{page.title | encode}}", 'google-plus-share', 'width=490,height=530');return false;">
-          <i class="fa fa-google-plus fa-lg"></i>
-          LinkedIn
+        <a class="btn btn-default btn-sm twitter" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | encode}}&title={{page.title | encode}}"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Linkedin2
         </a>
         <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}"
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
