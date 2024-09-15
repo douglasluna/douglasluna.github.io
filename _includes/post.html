@@ -74,7 +74,7 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">Share Post</h4>
-        <a class="btn btn-default btn-sm twitter" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | encode}}&title={{page.title | encode}}"
+        <a class="btn btn-default btn-sm twitter" href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{ page.url | absolute_url}}&title={{page.title | encode}}"
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <i class="fa fa-twitter fa-lg"></i>
           LinkedIn
