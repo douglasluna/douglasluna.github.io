@@ -14,5 +14,3 @@ Use Ruby 3 to preview the site locally:
 bundle install
 bundle exec jekyll serve
 ```
-
-The current design is based on the Chirpy blog structure with a warm editorial palette inspired by Anthropic's engineering site.
