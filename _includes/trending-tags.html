@@ -1,0 +1,38 @@
+{% assign MAX = 10 %}
+{% assign lang_posts = site.posts | where: 'lang', include.lang %}
+{% assign tag_names = '' | split: '' %}
+{% assign tag_entries = '' | split: '' %}
+
+{% for post in lang_posts %}
+  {% for tag_name in post.tags %}
+    {% unless tag_names contains tag_name %}
+      {% assign tag_names = tag_names | push: tag_name %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+{% for tag_name in tag_names %}
+  {% assign tag_size = 0 %}
+  {% for post in lang_posts %}
+    {% if post.tags contains tag_name %}
+      {% assign tag_size = tag_size | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% assign tag_entry = tag_size | append: '::' | append: tag_name %}
+  {% assign tag_entries = tag_entries | push: tag_entry %}
+{% endfor %}
+
+{% assign trending_tags = tag_entries | sort | reverse %}
+
+{% if trending_tags.size > 0 %}
+  <section>
+    <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.trending_tags -}}</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      {% for entry in trending_tags limit: MAX %}
+        {% assign tag_name = entry | split: '::' | last %}
+        {% assign url = tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
+        <a class="post-tag btn btn-outline-primary" href="{{ url | relative_url }}">{{ tag_name }}</a>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

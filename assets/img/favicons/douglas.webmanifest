@@ -1,0 +1,22 @@
+{
+  "name": "Douglas Luna",
+  "short_name": "Douglas Luna",
+  "description": "Notes from Douglas Luna on software engineering, artificial intelligence, product thinking, and the craft of building useful systems.",
+  "icons": [
+    {
+      "src": "/assets/img/favicons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#050505",
+  "background_color": "#1f1f1f",
+  "display": "standalone"
+}
