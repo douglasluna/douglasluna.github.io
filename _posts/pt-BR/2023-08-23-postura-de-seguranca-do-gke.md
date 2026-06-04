@@ -430,10 +430,9 @@ Mesmo com esses pontos, gostei muito dessa adição ao GKE. O Google Cloud segue
 
 ## Referências
 
-- [GKE Security Posture dashboard now generally available with enhanced features](https://cloud.google.com/blog/products/identity-security/gke-security-posture-now-generally-available-with-enhanced-features)
-- [About the security posture dashboard](https://cloud.google.com/kubernetes-engine/docs/concepts/about-security-posture-dashboard)
-- [About Kubernetes security posture scanning](https://cloud.google.com/kubernetes-engine/docs/concepts/about-configuration-scanning)
-- [Automatically scan workloads for configuration issues](https://cloud.google.com/kubernetes-engine/docs/how-to/protect-workload-configuration)
-- [gcloud container clusters create](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create)
-- [Kubernetes Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
-- [Publicação original](https://blog.douglasluna.com/use-a-postura-de-seguranca-do-gke-para-detectar-problemas-e-acabar-com-as-preocupacoes)
+- [GKE Security Posture dashboard now generally available with enhanced features](https://cloud.google.com/blog/products/identity-security/gke-security-posture-now-generally-available-with-enhanced-features){:target="_blank" rel="noopener noreferrer"}
+- [About the security posture dashboard](https://cloud.google.com/kubernetes-engine/docs/concepts/about-security-posture-dashboard){:target="_blank" rel="noopener noreferrer"}
+- [About Kubernetes security posture scanning](https://cloud.google.com/kubernetes-engine/docs/concepts/about-configuration-scanning){:target="_blank" rel="noopener noreferrer"}
+- [Automatically scan workloads for configuration issues](https://cloud.google.com/kubernetes-engine/docs/how-to/protect-workload-configuration){:target="_blank" rel="noopener noreferrer"}
+- [gcloud container clusters create](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create){:target="_blank" rel="noopener noreferrer"}
+- [Kubernetes Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/){:target="_blank" rel="noopener noreferrer"}

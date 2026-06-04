@@ -1,10 +1,11 @@
 ---
 # the default layout is 'page'
+title: About
 icon: fas fa-info-circle
 order: 4
 ---
 
-Hi, I’m Douglas Luna, a Staff Security Engineer focused on cloud security, DevSecOps, Kubernetes security, and security automation.
+Hi, I’m Douglas Luna, a Staff Security Engineer focused on Cloud security, DevSecOps, Kubernetes, and Platform Security.
 
 I have worked on securing complex multi-account cloud environments, integrating DevSecOps practices into CI/CD pipelines, and hardening Kubernetes clusters at scale. My work has included architecting end-to-end security strategies designed to meet compliance requirements across Banking, Financial Services, Telecom, and Healthcare environments.
 
